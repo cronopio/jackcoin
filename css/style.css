@@ -165,10 +165,97 @@ a:hover { color: #036; }
 /**
  * Primary styles
  *
- * Author: 
+ * Author: cronopio 
  */
 
+#container {
+  width: 900px;
+  margin-left: 15px;
+}
 
+#main {
+  margin-top: 30px;
+  padding: 10px;
+  background: url('../img/FondoJackoin.png') no-repeat;
+}
+
+#dealer {
+  position: relative;
+  width: 30%;
+  margin: 0 auto;
+}
+
+#dealer-cards {
+  min-height: 80px;
+  margin: 10px;
+  padding: 5px;
+  border: 1px solid red;
+}
+
+#players-container {
+  display: table;
+  margin: 235px 0px 0px 85px;
+  width:76%;
+}
+
+#position1 {
+  position:absolute;
+  top:352px;
+  left:130px;
+}
+
+ul#chips {
+  height:70px;
+  list-style:none;
+}
+
+ul#chips li {
+  display:inline;
+}
+
+}
+#players {
+  display: table-row;
+}
+
+#player-left, #player-center, #player-right {
+  display: table-cell;
+  border: 1px solid red;
+}
+
+#player-cards {
+  position: relative;
+  width: 30%;
+  margin: 0 auto;
+  min-height: 80px;
+  border: 1px solid red;
+}
+
+#inferior {
+  display: table;
+  width: 95%;
+  margin: 20px auto;
+}
+
+#inferior-wr {
+  display: table-row;
+  margin: 5px;
+}
+
+#actions, #player-img, #log{
+  display: table-cell;
+  width: 30%;
+}
+
+#actions, #log {
+  border: 1px solid black;
+}
+
+.carta {
+  width: 40px;
+  height: 50px;
+  border: 1px solid black;
+}
 
 
 
@@ -257,57 +344,6 @@ a:hover { color: #036; }
   @page { margin: 0.5cm; }
   p, h2, h3 { orphans: 3; widows: 3; }
   h2, h3{ page-break-after: avoid; }
-}
-
-#container {
-  width: 900px;
-  margin-left: 15px;
-}
-
-#main {
-  margin-top: 30px;
-  padding: 10px;
-}
-
-#dealer {
-  position: relative;
-  width: 30%;
-  margin: 0 auto;
-}
-
-#dealer-cards {
-  min-height: 80px;
-  margin: 10px;
-  padding: 5px;
-  border: 1px solid red;
-}
-
-#player-cards {
-  position: relative;
-  width: 30%;
-  margin: 0 auto;
-  min-height: 80px;
-  border: 1px solid red;
-}
-
-#inferior {
-  display: table;
-  width: 95%;
-  margin: 20px auto;
-}
-
-#inferior-wr {
-  display: table-row;
-  margin: 5px;
-}
-
-#actions, #player-img, #log{
-  display: table-cell;
-  width: 30%;
-}
-
-#actions, #log {
-  border: 1px solid black;
 }
 
 

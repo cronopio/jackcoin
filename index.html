@@ -47,12 +47,33 @@
           <div id="dealer-img">[Imagen del Dealer]</div>
           <div id="dealer-cards"></div>
         </div>
-        <div id="player">
-          <div id="player-cards"></div>
+        <div id="players-container">
+          <div id="position1"><img onClick="javascript:sit('1');" src="img/seat-sit.png" /></div>
+          <div id="position2"></div>
+          <div id="position3"></div>
+          <div id="position4"></div>
+          <div id="position5"></div>
+
+          <div id="players">
+            <div id="player-left">
+              <div id="player-left-cards"><div class="carta"></div></div>
+            </div>
+            <div id="player-center">
+              <div id="player-center-cards"><div class="carta"></div></div>
+            </div>
+            <div id="player-right">
+              <div id="player-right-cards"><div class="carta"></div></div>
+            </div>
+          </div>
+        </div>
           <div id="inferior">
+            <ul id="chips" style="display:none;">
+              <li><img src="img/5mbtc.png"></li>
+              <li><img src="img/10mbtc.png"></li>
+            </ul>
             <div id="inferior-wr">
               <div id="actions">
-                <div>Boton 1</div>
+                <button id="apostar" disabled="disabled">Apostar</button>
                 <div>Boton 2</div>
                 <div>Boton 3</div>
                 <div>Boton 4</div>
@@ -67,8 +88,6 @@
               </div>
             </div>            
           </div>
-          
-        </div>
       </div>
     </div>
     <footer>
@@ -95,12 +114,14 @@
 
 
   <!-- mathiasbynens.be/notes/async-analytics-snippet Change UA-XXXXX-X to be your site's ID -->
+  <!--
   <script>
     var _gaq=[["_setAccount","UA-XXXXX-X"],["_trackPageview"]];
     (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
     g.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js";
     s.parentNode.insertBefore(g,s)}(document,"script"));
   </script>
+  -->
 
 </body>
 </html>
